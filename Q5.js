@@ -36,6 +36,19 @@ var cars = {
 
     return model;
 
-
-
 console.log(car.getModel());
+
+// incorrect
+
+// Answer:
+cars.getModels = function() {
+    var models = [];
+
+    cars.list.forEach(function(car) {
+        models.push( car.model );
+    });
+
+    return models;
+}
+
+console.log(car.getModels());
