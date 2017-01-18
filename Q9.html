@@ -28,6 +28,16 @@ between 0 and 3 (including 0, but not 3) inside the button
       return Math.floor(Math.random() * 3);
     }
     console.log(wholeNum());
-    </script
+    </script>
 </body>
 </html>
+
+<!-- incorrect -->
+
+<!-- Answer: -->
+<script>
+    var $btn = $('#btn');
+    $btn.click(function() {
+        $btn.html( Math.random() * 3 );
+    });
+</script>

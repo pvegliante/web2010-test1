@@ -33,3 +33,24 @@ function adventureSelector(num) {
 };
 
 adventureSelector(2);
+
+// incorrect
+
+// Answer:
+function adventureSelector(num) {
+    if (num === 1) {
+        return function() {
+            console.log('You selected the Vines of Doom!');
+        };
+    } else if (num === 2) {
+        return function() {
+            console.log('Looks Like you want to go to the Lake of Despair!');
+        };
+    } else if (num === 3) {
+        return function() {
+            console.log('The Caves of Catastrophe!');
+        };
+    };
+};
+
+adventureSelector(2)();
